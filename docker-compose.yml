@@ -1,0 +1,15 @@
+version: "3"
+services:
+  privacy:
+    container_name: 'privacy-viewer'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: privacy-report-viewer
+    environment:
+      - TZ=Aisa/Macau
+    ports:
+      - 9668:8015
+
+
+# https://github.com/iqiancheng/app-privacy-report-viewer
