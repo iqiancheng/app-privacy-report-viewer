@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: privacy-report-viewer
     environment:
-      - TZ=Aisa/Macau
+      - TZ=Asia/Macau
     ports:
       - 9668:8015
 
